@@ -1,0 +1,57 @@
+# ─── Secrets (NEVER commit) ─────────────────────────────────────────
+.env
+.env.*
+!.env.example
+wp-config-secrets.php
+
+# ─── Database dumps ─────────────────────────────────────────────────
+*.sql
+*.sql.gz
+db-roasters.sql
+db-roasters.sql.gz
+u373836252_*.sql
+
+# ─── WordPress runtime / generated content ──────────────────────────
+wp-content/uploads/
+wp-content/ai1wm-backups/
+wp-content/cache/
+wp-content/litespeed/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+wp-content/backup-db/
+wp-content/backups/
+wp-content/wflogs/
+wp-content/debug.log
+wp-content/advanced-cache.php
+wp-content/object-cache.php
+wp-content/db.php
+wp-content/blogs.dir/
+
+# ─── Logs ───────────────────────────────────────────────────────────
+*.log
+error_log
+debug.log
+
+# ─── OS / editor junk ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ─── Node / build artifacts (in case any plugin uses them) ──────────
+node_modules/
+.cache/
+dist/
+build/
+
+# ─── Local Docker volumes ───────────────────────────────────────────
+db_data/
+
+# ─── Misc local junk ────────────────────────────────────────────────
+.private/
+*.bk
+*.bak
+*.orig
