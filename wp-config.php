@@ -37,6 +37,11 @@ define( 'WP_AUTO_UPDATE_CORE', false );
 define( 'WP_MEMORY_LIMIT', '512M' );
 define( 'WP_MAX_MEMORY_LIMIT', '512M' );
 
+// ── Hardening ───────────────────────────────────────────────────────
+// Block the in-admin theme/plugin code editor — defense in depth if
+// admin credentials get compromised.
+define( 'DISALLOW_FILE_EDIT', true );
+
 // ── Local docker overrides ──────────────────────────────────────────
 // When running inside the docker stack, force URLs to localhost so
 // admin/login redirects don't bounce to the production domain.
